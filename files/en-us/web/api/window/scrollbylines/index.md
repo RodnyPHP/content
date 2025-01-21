@@ -1,30 +1,33 @@
 ---
-title: Window.scrollByLines()
+title: "Window: scrollByLines() method"
+short-title: scrollByLines()
 slug: Web/API/Window/scrollByLines
-tags:
-  - API
-  - HTML DOM
-  - Method
-  - Non-standard
-  - Reference
-  - Window
+page-type: web-api-instance-method
+status:
+  - non-standard
 browser-compat: api.Window.scrollByLines
 ---
-{{ ApiRef() }} {{Non-standard_header}}
+
+{{APIRef}} {{Non-standard_header}}
 
 The **`Window.scrollByLines()`** method scrolls the document by
 the specified number of lines.
 
 ## Syntax
 
-```js
+```js-nolint
 scrollByLines(lines)
 ```
 
 ### Parameters
 
-- `lines` is the number of lines to scroll the document by. It may be a
-  positive or negative integer.
+- `lines`
+  - : The number of lines to scroll the document by. It may be a
+    positive or negative integer.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

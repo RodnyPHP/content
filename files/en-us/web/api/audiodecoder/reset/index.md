@@ -1,21 +1,18 @@
 ---
-title: AudioDecoder.reset()
+title: "AudioDecoder: reset() method"
+short-title: reset()
 slug: Web/API/AudioDecoder/reset
-tags:
-  - API
-  - Method
-  - Reference
-  - reset
-  - AudioDecoder
+page-type: web-api-instance-method
 browser-compat: api.AudioDecoder.reset
 ---
-{{securecontext_header}}{{DefaultAPISidebar("WebCodecs API")}}
+
+{{securecontext_header}}{{APIRef("WebCodecs API")}}{{AvailableInWorkers("window_and_dedicated")}}
 
 The **`reset()`** method of the {{domxref("AudioDecoder")}} interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.
 
 ## Syntax
 
-```js
+```js-nolint
 reset()
 ```
 
@@ -25,7 +22,7 @@ None.
 
 ### Return value
 
-{{jsxref("Undefined")}}.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

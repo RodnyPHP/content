@@ -1,29 +1,28 @@
 ---
-title: SharedWorkerGlobalScope.close()
+title: "SharedWorkerGlobalScope: close() method"
+short-title: close()
 slug: Web/API/SharedWorkerGlobalScope/close
-tags:
-  - API
-  - DOM
-  - Method
-  - Reference
-  - SharedWorkerGlobalScope
-  - Web Workers
-  - close
+page-type: web-api-instance-method
 browser-compat: api.SharedWorkerGlobalScope.close
 ---
+
 {{APIRef("Web Workers API")}}
 
 The **`close()`** method of the {{domxref("SharedWorkerGlobalScope")}} interface discards any tasks queued in the `SharedWorkerGlobalScope`'s event loop, effectively closing this particular scope.
 
 ## Syntax
 
-```js
+```js-nolint
 close()
 ```
 
 ### Parameters
 
 None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -35,7 +34,8 @@ close();
 
 `close()` and `self.close()` are effectively equivalent — both represent `close()` being called from inside the worker's inner scope.
 
-> **Note:** There is also a way to stop the worker from the main thread: the {{domxref("Worker.terminate")}} method.
+> [!NOTE]
+> There is also a way to stop the worker from the main thread: the {{domxref("Worker.terminate")}} method.
 
 ## Specifications
 

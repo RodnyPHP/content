@@ -1,15 +1,12 @@
 ---
-title: WebGL2RenderingContext.endTransformFeedback()
+title: "WebGL2RenderingContext: endTransformFeedback() method"
+short-title: endTransformFeedback()
 slug: Web/API/WebGL2RenderingContext/endTransformFeedback
-tags:
-  - API
-  - Method
-  - Reference
-  - WebGL
-  - WebGL2
+page-type: web-api-instance-method
 browser-compat: api.WebGL2RenderingContext.endTransformFeedback
 ---
-{{APIRef("WebGL")}}
+
+{{APIRef("WebGL")}}{{AvailableInWorkers}}
 
 The **`WebGL2RenderingContext.endTransformFeedback()`** method
 of the [WebGL 2 API](/en-US/docs/Web/API/WebGL_API) ends a transform feedback
@@ -17,7 +14,7 @@ operation.
 
 ## Syntax
 
-```js
+```js-nolint
 endTransformFeedback()
 ```
 
@@ -27,12 +24,12 @@ None.
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
 ```js
-var transformFeedback = gl.createTransformFeedback();
+const transformFeedback = gl.createTransformFeedback();
 gl.bindTransformFeedback(gl.TRANSFORM_FEEDBACK, transformFeedback);
 gl.beginTransformFeedback(gl.TRIANGLES);
 gl.drawArrays(gl.TRIANGLES, 0, 3);

@@ -1,13 +1,11 @@
 ---
-title: HTMLAnchorElement.toString()
+title: "HTMLAnchorElement: toString() method"
+short-title: toString()
 slug: Web/API/HTMLAnchorElement/toString
-tags:
-  - API
-  - HTMLAnchorElement
-  - Method
-  - Stringifier
+page-type: web-api-instance-method
 browser-compat: api.HTMLAnchorElement.toString
 ---
+
 {{ApiRef("URL API")}}
 
 The **`HTMLAnchorElement.toString()`** {{Glossary("stringifier")}}
@@ -16,13 +14,17 @@ version of {{domxref("HTMLAnchorElement.href")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 toString()
 ```
 
 ### Parameters
 
 None.
+
+### Return value
+
+A string containing the element's complete URL.
 
 ## Examples
 
