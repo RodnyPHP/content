@@ -1,20 +1,14 @@
 ---
-title: OfflineAudioContext.suspend()
+title: "OfflineAudioContext: suspend() method"
+short-title: suspend()
 slug: Web/API/OfflineAudioContext/suspend
-tags:
-  - API
-  - Method
-  - NeedsExample
-  - OfflineAudioContext
-  - Reference
-  - Web Audio API
-  - suspend
+page-type: web-api-instance-method
 browser-compat: api.OfflineAudioContext.suspend
 ---
+
 {{ APIRef("Web Audio API") }}
 
-The **`suspend()`** method of the {{
-  domxref("OfflineAudioContext") }} interface schedules a suspension of the time
+The **`suspend()`** method of the {{domxref("OfflineAudioContext")}} interface schedules a suspension of the time
 progression in the audio context at the specified time and returns a promise. This is
 generally useful at the time of manipulating the audio graph synchronously on
 OfflineAudioContext.
@@ -27,14 +21,14 @@ precise suspension.
 
 ## Syntax
 
-```js
+```js-nolint
 suspend(suspendTime)
 ```
 
 ### Parameters
 
-- suspendTime
-  - : A {{jsxref("double")}} specifying the suspend time, in seconds.
+- `suspendTime`
+  - : A floating-point number specifying the suspend time, in seconds.
 
 ### Return value
 

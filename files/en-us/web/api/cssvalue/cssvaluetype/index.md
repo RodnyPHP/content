@@ -1,23 +1,21 @@
 ---
-title: CSSValue.cssValueType
+title: "CSSValue: cssValueType property"
+short-title: cssValueType
 slug: Web/API/CSSValue/cssValueType
-tags:
-  - API
-  - CSSValue
-  - Property
-  - Read-only
-  - Reference
-  - cssValueType
-  - Deprecated
+page-type: web-api-instance-property
+status:
+  - deprecated
 browser-compat: api.CSSValue.cssValueType
 ---
+
 {{APIRef("CSSOM")}}{{Deprecated_header}}
 
 The **`cssValueType`** read-only property of the
 {{domxref("CSSValue")}} interface represents the type of the current computed CSS
 property value.
 
-> **Note:** This property was part of an attempt to create a typed CSS Object Model. This attempt has been abandoned, and most browsers do
+> [!NOTE]
+> This property was part of an attempt to create a typed CSS Object Model. This attempt has been abandoned, and most browsers do
 > not implement it.
 >
 > To achieve your purpose, you can use:
@@ -73,8 +71,8 @@ Possible values are:
 ## Examples
 
 ```js
-var styleDeclaration = document.styleSheets[0].cssRules[0].style;
-var cssValue = styleDeclaration.getPropertyCSSValue("color");
+const styleDeclaration = document.styleSheets[0].cssRules[0].style;
+const cssValue = styleDeclaration.getPropertyCSSValue("color");
 console.log(cssValue.cssValueType);
 ```
 

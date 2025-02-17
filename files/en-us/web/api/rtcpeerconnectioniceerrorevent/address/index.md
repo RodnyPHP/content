@@ -1,22 +1,12 @@
 ---
-title: RTCPeerConnectionIceErrorEvent.address
+title: "RTCPeerConnectionIceErrorEvent: address property"
+short-title: address
 slug: Web/API/RTCPeerConnectionIceErrorEvent/address
-tags:
-  - API
-  - Address
-  - ICE
-  - IP
-  - Negotiation
-  - Networking
-  - Property
-  - RTCPeerConnectionIceErrorEvent
-  - Reference
-  - WebRTC
-  - WebRTC API
-  - WebRTC Device API
+page-type: web-api-instance-property
 browser-compat: api.RTCPeerConnectionIceErrorEvent.address
 ---
-{{DefaultAPISidebar("WebRTC")}}
+
+{{APIRef("WebRTC")}}
 
 The {{domxref("RTCPeerConnectionIceErrorEvent")}} property
 **`address`** is a string which indicates the local IP address
@@ -25,7 +15,7 @@ during negotiations. The error which occurred involved this address.
 
 ## Value
 
-A {{domxref("DOMString")}} which specifies the local IP address of the network
+A string which specifies the local IP address of the network
 connection to the ICE server with which negotiations were occurring when the error
 occurred. This address identifies the network interface on the local device which is
 being used to attempt to establish the connection to the remote peer.
@@ -42,7 +32,7 @@ If the local IP address isn't exposed as part of a local candidate, the value of
 
 This example creates a handler for
 {{domxref("RTCPeerConnection.icecandidateerror_event", "icecandidateerror")}} events
-which creates human readable messages describing the local network interface for the
+which creates human-readable messages describing the local network interface for the
 connection as well as the ICE server that was being used to try to open the connection,
 then calls a function to display those as well as the event's
 {{domxref("RTCPeerConnectionIceErrorEvent.errorText", "errorText")}} property's

@@ -1,21 +1,18 @@
 ---
-title: AudioEncoder.encode()
+title: "AudioEncoder: encode() method"
+short-title: encode()
 slug: Web/API/AudioEncoder/encode
-tags:
-  - API
-  - Method
-  - Reference
-  - encode
-  - AudioEncoder
+page-type: web-api-instance-method
 browser-compat: api.AudioEncoder.encode
 ---
-{{securecontext_header}}{{DefaultAPISidebar("WebCodecs API")}}
+
+{{securecontext_header}}{{APIRef("WebCodecs API")}}{{AvailableInWorkers("window_and_dedicated")}}
 
 The **`encode()`** method of the {{domxref("AudioEncoder")}} interface enqueues a control message to encode a given {{domxref("AudioData")}} object.
 
 ## Syntax
 
-```js
+```js-nolint
 encode(data)
 ```
 
@@ -26,14 +23,14 @@ encode(data)
 
 ### Return value
 
-{{jsxref("Undefined")}}.
+None ({{jsxref("undefined")}}).
 
 ### Exceptions
 
 - `InvalidStateError` {{domxref("DOMException")}}
   - : Thrown if the {{domxref("AudioEncoder.state","state")}} is not `"configured"`.
 - {{jsxref("TypeError")}}
-  - : Thrown if the `AudioData` object has been {{Glossary("Transferable Objects","transferred")}}.
+  - : Thrown if the `AudioData` object has been [transferred](/en-US/docs/Web/API/Web_Workers_API/Transferable_objects).
 
 ## Examples
 

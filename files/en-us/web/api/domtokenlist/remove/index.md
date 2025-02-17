@@ -1,15 +1,11 @@
 ---
-title: DOMTokenList.remove()
+title: "DOMTokenList: remove() method"
+short-title: remove()
 slug: Web/API/DOMTokenList/remove
-tags:
-  - API
-  - DOM
-  - DOMTokenList
-  - Method
-  - Reference
-  - remove
+page-type: web-api-instance-method
 browser-compat: api.DOMTokenList.remove
 ---
+
 {{APIRef("DOM")}}
 
 The **`remove()`** method of the {{domxref("DOMTokenList")}} interface
@@ -17,10 +13,10 @@ removes the specified _tokens_ from the list.
 
 ## Syntax
 
-```js
+```js-nolint
 remove(token1)
 remove(token1, token2)
-remove(token1, token2, /* ... ,*/ tokenN)
+remove(token1, token2, /* …, */ tokenN)
 ```
 
 ### Parameters
@@ -31,7 +27,7 @@ remove(token1, token2, /* ... ,*/ tokenN)
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -43,8 +39,7 @@ list into the `<span>`'s {{domxref("Node.textContent")}}.
 First, the HTML:
 
 ```html
-<div id="ab" class="a b c"></div>
-<div id="a" class="a b c"></div>
+<span id="ab" class="a b c"></span> <span id="a" class="a b c"></span>
 ```
 
 Now the JavaScript:
@@ -60,7 +55,7 @@ To remove multiple classes at once, you can supply multiple tokens. The order yo
 supply the tokens doesn't have to match the order they appear in the list:
 
 ```js
-const span2 = document.getElementById("a")
+const span2 = document.getElementById("a");
 const classes2 = span2.classList;
 
 classes2.remove("c", "b");

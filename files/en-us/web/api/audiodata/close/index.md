@@ -1,21 +1,18 @@
 ---
-title: AudioData.close()
+title: "AudioData: close() method"
+short-title: close()
 slug: Web/API/AudioData/close
-tags:
-  - API
-  - Method
-  - Reference
-  - close
-  - AudioData
+page-type: web-api-instance-method
 browser-compat: api.AudioData.close
 ---
-{{DefaultAPISidebar("WebCodecs API")}}
+
+{{APIRef("WebCodecs API")}}{{AvailableInWorkers("window_and_dedicated")}}
 
 The **`close()`** method of the {{domxref("AudioData")}} interface clears all states and releases the reference to the media resource.
 
 ## Syntax
 
-```js
+```js-nolint
 close()
 ```
 

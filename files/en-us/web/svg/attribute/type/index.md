@@ -1,13 +1,9 @@
 ---
 title: type
 slug: Web/SVG/Attribute/type
-tags:
-  - NeedsCompatTable
-  - NeedsExample
-  - SVG
-  - SVG Attribute
-  - filter
+page-type: svg-attribute
 ---
+
 {{SVGRef}}
 
 The `type` attribute is a generic attribute and it has different meaning based on the context in which it's used.
@@ -32,7 +28,9 @@ You can use this attribute with the following SVG elements:
 
 ## Usage context
 
-### For the {{SVGElement("animateTransform")}} elements
+### For the &lt;animateTransform&gt; elements
+
+SVG element: {{SVGElement("animateTransform")}}
 
 <table class="properties">
   <tbody>
@@ -63,7 +61,9 @@ You can use this attribute with the following SVG elements:
   </tbody>
 </table>
 
-### For the {{ SVGElement("feColorMatrix") }} element
+### For the &lt;feColorMatrix&gt; element
+
+SVG element: {{SVGElement("feColorMatrix")}}
 
 <table class="properties">
   <tbody>
@@ -95,7 +95,9 @@ You can use this attribute with the following SVG elements:
   </tbody>
 </table>
 
-### For the {{ SVGElement("feFuncR") }}, {{ SVGElement("feFuncG") }}, {{ SVGElement("feFuncB") }}, and {{ SVGElement("feFuncA") }} elements
+### For the &lt;feFuncR&gt;, &lt;feFuncG&gt;, &lt;feFuncB&gt;, and &lt;feFuncA&gt; elements
+
+SVG elements: {{SVGElement("feFuncR")}}, {{SVGElement("feFuncG")}}, {{SVGElement("feFuncB")}}, {{SVGElement("feFuncA")}}
 
 <table class="properties">
   <tbody>
@@ -127,7 +129,9 @@ You can use this attribute with the following SVG elements:
   </tbody>
 </table>
 
-### For the {{ SVGElement("feTurbulence") }} element
+### For the &lt;feTurbulence&gt; element
+
+SVG element: {{SVGElement("feTurbulence")}}
 
 <table class="properties">
   <tbody>
@@ -158,7 +162,9 @@ You can use this attribute with the following SVG elements:
   </tbody>
 </table>
 
-### For the {{ SVGElement("style") }} and {{SVGElement("script")}} elements
+### For the &lt;style&gt; and &lt;script&gt; elements
+
+SVG elements: {{SVGElement("style")}}, {{SVGElement("script")}}
 
 <table class="properties">
   <tbody>
@@ -168,7 +174,7 @@ You can use this attribute with the following SVG elements:
     </tr>
     <tr>
       <th scope="row">Value</th>
-      <td>&#x3C;content-type></td>
+      <td>&#x3C;media-type></td>
     </tr>
     <tr>
       <th scope="row">Animatable</th>
